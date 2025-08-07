@@ -1,0 +1,10 @@
+I have created 4 classes and a main class
+The 4 classes are namely
+        1.Person - which is a abstract class
+                In which I have created to private fields (name and id)
+                Then I have created a constructor and initialized the values here 
+                Cuz it is private....I have used used the getter so that i can use it outside of the class
+        2.Employee - Which is a class that is extended to Person
+                In this I have created a private fields (department) , and a static static field (employeeCount) and the initial vale is set as 0
+                Then I have created a constructor and initialized the values and also added a super 
+
