@@ -1,18 +1,17 @@
 package stack.queue;
 
-public class queueue {
-    private int[] queue;
+public class QueueWstring {
+private String[] queue;
     private int front;
     private int rear;
     private int maxSize;
-    public queueue(int maxSize)
-    {
+    public QueueWstring(int maxSize){
         this.maxSize = maxSize;
-        queue = new int[maxSize];
+        queue = new String[maxSize];
         front = -1;
         rear = -1;
     }
-    public void enqueue(int data){
+    public void enqueue(String data){
         if(isFull()){
             System.out.println("Queue is full");
             return;
@@ -22,12 +21,12 @@ public class queueue {
         }
         queue[++rear] = data;
     }
-    public int dequeue(){
+    public String dequeue(){
         if(isEmpty()){
             System.out.println("Queue is empty");
-            return -1;
+            return null;
         }
-        int value = queue[front];
+        String value = queue[front];
         if(front == rear){
             front = -1;
             rear = -1;
@@ -54,15 +53,14 @@ public class queueue {
         System.out.println();
         
     }
-    public int poll(){
+    public String poll(){
         return dequeue();
     }
-    public int element(){
+    public String element(){
         if(isEmpty()){
             System.out.println("Empty");
-            return -1;
+            return null;
         }
         return queue[front];
     }
-
- }
+}

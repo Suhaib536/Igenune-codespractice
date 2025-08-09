@@ -1,10 +1,8 @@
 package stack.queue;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        queueue i1 = new queueue(5);
+     /* queueue i1 = new queueue(5);
         queueue i2 = new queueue(6);
         queueue temp = new queueue(10);
         i1.enqueue(2);
@@ -31,6 +29,17 @@ public class Main {
                 System.out.println("Invalid Pair");
             }
         }
-        temp.display();
+        temp.display(); */
+
+        //-----------------------------------------------------------
+        System.out.println("FOR THE STRING");
+
+        QueueWstring str1 = new QueueWstring(5);
+        str1.enqueue("a");
+        str1.enqueue("b");
+        str1.enqueue("c");
+        str1.enqueue("d");
+
+        str1.display();
     }
 }
