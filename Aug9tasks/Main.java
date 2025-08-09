@@ -2,7 +2,7 @@ package Aug9tasks;
 
 public class Main {
     public static void main(String[] args) {
-        Mid n1 = new Mid();
+        Mide n1 = new Mide();
         n1.add(10);
         n1.add(20);
         n1.add(30);
